@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Initialization/Initialization.iml" filepath="$PROJECT_DIR$/Initialization/Initialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThingkingInJava.iml" filepath="$PROJECT_DIR$/ThingkingInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileTest/WhileTest.iml" filepath="$PROJECT_DIR$/WhileTest/WhileTest.iml" />
+    </modules>
+  </component>
+</project>
