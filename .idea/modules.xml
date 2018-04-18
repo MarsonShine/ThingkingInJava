@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Initialization/Initialization.iml" filepath="$PROJECT_DIR$/Initialization/Initialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/InnerClasses/InnerClasses.iml" filepath="$PROJECT_DIR$/InnerClasses/InnerClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java10/Java10.iml" filepath="$PROJECT_DIR$/Java10/Java10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prisistents/Prisistents.iml" filepath="$PROJECT_DIR$/Prisistents/Prisistents.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThingkingInJava.iml" filepath="$PROJECT_DIR$/ThingkingInJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileTest/WhileTest.iml" filepath="$PROJECT_DIR$/WhileTest/WhileTest.iml" />
     </modules>

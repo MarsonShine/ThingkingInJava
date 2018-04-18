@@ -8,6 +8,7 @@ public class Fruit {
     public static void main(String[] args) {
         Fruit f = new Apple();
         f.show_name(2);
+
     }
 }
 

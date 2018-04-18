@@ -19,7 +19,7 @@ public class Literals {
         byte b = 0x7f; //max byte hex value
         print("b: " + Integer.toBinaryString(b));
         short s = 0x7fff; //max short hex value;
-        print("s:" +Integer.toBinaryString(s));
+        print("s:" + Integer.toBinaryString(s));
 
         long n1 = 200L;  //long stuffix
         long b2 = 200l; //long stuffix but can be confusing;
