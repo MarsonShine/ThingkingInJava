@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025e83dc-a542-4bc8-9dc9-8da63940857d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/Book.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/performance/Stopwatch.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/Concatenation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/InfiniteRecursion.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/StringIntern.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/UsingStringBuilder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Book/src/strings/WhitherStringBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java" afterPath="$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,21 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="TransformerManager.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.instrument/sun/instrument/TransformerManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-              <folding>
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1039#1040#0" expanded="true" />
-                <element signature="e#5089#5090#0" expanded="true" />
-                <element signature="e#5128#5129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClassFileTransformer.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.instrument/java/lang/instrument/ClassFileTransformer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringVsStringBuilder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringVsStringBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="348">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringIntern.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Book/src/strings/StringIntern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -296,6 +283,13 @@
               <item name="ThingkingInJava" type="462c0819:PsiDirectoryNode" />
               <item name="Book" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="performance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ThingkingInJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ThingkingInJava" type="462c0819:PsiDirectoryNode" />
+              <item name="Book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="strings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,7 +367,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringVsStringBuilder">
+  <component name="RunManager" selected="Application.StringIntern">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -503,10 +497,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.StringVsStringBuilder" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Concatenation" />
-        <item index="2" class="java.lang.String" itemvalue="Application.InfiniteRecursion" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StringIntern" />
+        <item index="0" class="java.lang.String" itemvalue="Application.StringIntern" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StringVsStringBuilder" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Concatenation" />
+        <item index="3" class="java.lang.String" itemvalue="Application.InfiniteRecursion" />
         <item index="4" class="java.lang.String" itemvalue="Application.UsingStringBuilder" />
       </list>
     </recent_temporary>
@@ -527,7 +521,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938856" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119097225" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -555,7 +549,8 @@
     <MESSAGE value="fixed：升级jdk10" />
     <MESSAGE value="fixed：修复升级java10带来的问题" />
     <MESSAGE value="fixed：java编程思想 第十四章" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed：java编程思想 第十四章" />
+    <MESSAGE value="fixed：java编程思想 第十三章 字符串操作&#10;新增简单性能测试类" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed：java编程思想 第十三章 字符串操作&#10;新增简单性能测试类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -848,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Book/src/strings/StringIntern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/lang/invoke/CallSite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1024,6 +1011,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Book/src/performance/Stopwatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1041,10 +1036,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Book/src/strings/StringVsStringBuilder.java">
+    <entry file="file://$PROJECT_DIR$/Book/src/strings/StringIntern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="232">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
