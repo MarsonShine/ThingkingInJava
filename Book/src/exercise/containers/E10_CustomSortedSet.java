@@ -3,6 +3,7 @@ package exercise.containers;
 import java.util.*;
 
 import static java.util.Collections.binarySearch;
+import static net.mindview.util.Println.print;
 
 /*
  * 使用LinkedList作为实现，定义自己的SortedSet
@@ -29,27 +30,66 @@ class CustomSortedSet<T> implements SortedSet<T> {
 
     @Override
     public SortedSet<T> subSet(T fromElement, T toElement) {
-        return null;
+        checkForNull(fromElement);
+        checkForNull(toElement);
+        var fromIndex = list.indexOf(fromElement);
+        var toIndex = list.indexOf(toElement);
+        checkForValidIndex(fromIndex);
+        checkForValidIndex(toIndex);
+        try{
+            return new CustomSortedSet<T>(
+                    list.subList(fromIndex,toIndex)
+            );
+        }catch(IndexOutOfBoundsException e){
+            throw new IllegalArgumentException(e);
+        }
     }
+
 
     @Override
     public SortedSet<T> headSet(T toElement) {
-        return null;
+        checkForNull(toElement);
+        var toIndex = list.indexOf(toElement);
+        checkForValidIndex(toIndex);
+        try{
+            return new CustomSortedSet<T>(
+                    list.subList(0,toIndex)
+            );
+        }catch (IllegalArgumentException e){
+            throw new IllegalArgumentException(e);
+        }
     }
 
     @Override
     public SortedSet<T> tailSet(T fromElement) {
-        return null;
+        checkForNull(fromElement);
+        var fromIndex = list.indexOf(fromElement);
+        checkForValidIndex(fromIndex);
+        try{
+            return new CustomSortedSet<>(
+                    list.subList(fromIndex,list.size())
+            );
+        }catch (IndexOutOfBoundsException e){
+            throw new IllegalArgumentException(e);
+        }
     }
 
     @Override
     public T first() {
-        return null;
+        try{
+            return list.get(0);
+        }catch(IndexOutOfBoundsException e){
+            throw new NoSuchElementException();
+        }
     }
 
     @Override
     public T last() {
-        return null;
+        try{
+            return list.get(list.size()-1);
+        }catch(IndexOutOfBoundsException e){
+            throw new NoSuchElementException();
+        }
     }
 
     @Override
@@ -130,12 +170,14 @@ class CustomSortedSet<T> implements SortedSet<T> {
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        checkForNull(c);
+        checkForNullElements(c);
+        return list.removeAll(c);
     }
 
     @Override
     public void clear() {
-
+        list.clear();
     }
 
     private void checkForNull(Object o) {
@@ -148,7 +190,48 @@ class CustomSortedSet<T> implements SortedSet<T> {
                 throw new NullPointerException();
         }
     }
+    private void checkForValidIndex(int fromIndex) {
+        if(fromIndex == -1)
+            throw new IllegalArgumentException();
+    }
 }
 
 public class E10_CustomSortedSet {
+    public static void main(String[] args){
+        SortedSet<String> sortedSet =
+                new CustomSortedSet<String>();
+        Collections.addAll(sortedSet,"one two three four five six seven eight".split(" "));
+        print(sortedSet);
+        var low = sortedSet.first();
+        var high = sortedSet.last();
+        print(low);
+        print(high);
+        var it = sortedSet.iterator();
+        for (var i=0;i<=6;i++){
+            if(i == 3) low = it.next();
+            if(i==6) high = it.next();
+            else it.next();
+        }
+        print(low);
+        print(high);
+        print(sortedSet.subSet(low, high));
+        print(sortedSet.headSet(high));
+        print(sortedSet.tailSet(low));
+        print(sortedSet.contains("three"));
+        print(sortedSet.contains("eleven"));
+        print(sortedSet.addAll(Arrays.asList(
+                "three", "eleven")));
+        print(sortedSet);
+        print(sortedSet.retainAll(Arrays.asList(
+                "three", "eleven")));
+        print(sortedSet);
+        // Demonstrate data integrity
+        try {
+            sortedSet.addAll(Arrays.asList("zero", null));
+        } catch(NullPointerException e) {
+            System.out.println("Null elements not supported!");
+        }
+        // The set will not contain "zero"!
+        print(sortedSet);
+    }
 }
