@@ -1,10 +1,8 @@
 package net.mindview.util;
 
 import javafx.util.Pair;
-import typeinfo.pets.Pet;
 
 import java.util.*;
-import java.util.List;
 
 public class MapData<K, V> extends LinkedHashMap<K, V> {
     //一个键值对生产着
